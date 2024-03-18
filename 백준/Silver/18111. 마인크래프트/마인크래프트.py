@@ -9,14 +9,9 @@ ground=0
 for _ in range(n):
   gl.append(list(map(int, input().split())))
 
-gmin=min(gl[0])
-gmax=max(gl[0])
+gmin=min(map(min,gl))
+gmax=max(map(max,gl))
 
-for i in range(1,n):
-  if gmin>min(gl[i]):
-    gmin=min(gl[i])
-  if gmax<max(gl[i]):
-    gmax=max(gl[i])
 
 for k in range(gmin, gmax+1):
   time=0
