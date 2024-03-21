@@ -1,3 +1,5 @@
+# 시간초과로 인해 dictionary 사용
+
 import sys
 
 input=sys.stdin.readline
